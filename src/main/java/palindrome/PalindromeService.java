@@ -12,8 +12,6 @@ import java.util.List;
 @Service
 public class PalindromeService {
 
-    private static int endIndex;
-
     /**
      * search palindrome substrings in the input string
      *
@@ -79,6 +77,9 @@ public class PalindromeService {
             }
         }
 
+        if (len < 2) {
+            return null;
+        }
         char[] ss = Arrays.copyOfRange(subString, start - len, start + len + 1);
         return String.valueOf(formatString(ss));
     }
@@ -106,6 +107,5 @@ public class PalindromeService {
         }
         return output;
     }
-
 
 }
