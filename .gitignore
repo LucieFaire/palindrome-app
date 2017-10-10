@@ -1,5 +1,4 @@
 .gitignore
 .idea/
-README.md
 target/
 pom.xml
