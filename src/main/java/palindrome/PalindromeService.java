@@ -15,8 +15,8 @@ public class PalindromeService {
     /**
      * search palindrome substrings in the input string
      *
-     * @param input
-     * @return
+     * @param input input string
+     * @return array of longest palindromes
      */
     public List<PalindromeResponse> findPalindromes(String input) {
         final List<PalindromeResponse> resp = new ArrayList<>();
